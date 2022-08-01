@@ -1,0 +1,63 @@
+@import "./fonts.css";
+@import "./variables.css";
+@import "./reset.css";
+@import "./container.css";
+@import "./modal.css";
+@import "./components.css";
+@import "./header.css";
+@import "./footer.css";
+@import "./home.css";
+
+body {
+  background-color: linear-gradient(
+    284.15deg,
+    #eff3f6 15.54%,
+    rgba(239, 243, 246, 0) 86.34%
+  );
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+h2,
+h3 {
+  color: #2f3133;
+}
+
+h1 {
+  font-size: 6.4rem;
+  line-height: 7.8rem;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 3.2rem;
+  line-height: 3.9rem;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 150%;
+}

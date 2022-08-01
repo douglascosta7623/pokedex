@@ -1,0 +1,34 @@
+footer {
+  width: 100%;
+  background-color: #3f5db3;
+  padding-top: 6.7rem;
+  padding-bottom: 6.5rem;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer h3 {
+  color: #ffffff;
+}
+
+footer p {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 180%;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+footer a {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 180%;
+  text-align: right;
+  color: #ffffff;
+}

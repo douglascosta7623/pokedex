@@ -1,0 +1,440 @@
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  max-width: 12rem;
+  padding: 0.6rem 0.4rem;
+  background: #ffffff;
+  border-radius: 244px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 150%;
+}
+
+.tag .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  background-color: rgba(194, 0, 0, 0.15);
+  border-radius: 50%;
+}
+
+.tag span {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 150%;
+
+  color: #c20001;
+}
+
+.blue__tag .icon {
+  background-color: rgba(63, 103, 186, 0.15);
+}
+
+.blue__tag span {
+  color: #3f67ba;
+}
+
+.search {
+  background-color: #ffffff;
+  border-radius: 122px;
+  width: 100%;
+  max-width: 40.3rem;
+  height: 5.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2.5rem;
+}
+
+.search input {
+  border: none;
+  width: 70%;
+}
+
+.search input::placeholder {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  color: #a0afba;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.search button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.2rem;
+  height: 4.2rem;
+  background-color: rgba(158, 185, 225, 0.1);
+  border-radius: 50%;
+  border: 1px solid transparent;
+  margin-right: 0.8rem;
+  transition: border-color 0.3ms;
+}
+
+.search button:hover {
+  border-color: #3e75c3;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  filter: grayscale(100%);
+  transition: all 0.3s;
+}
+
+.filter:hover {
+  filter: grayscale(0%);
+}
+
+.filter.ghost span {
+  color: #616eb7;
+}
+
+.filter.bug span {
+  color: #9bba48;
+}
+
+.filter.dark span {
+  color: #595761;
+}
+
+.filter.dragon span {
+  color: #2c6ac1;
+}
+
+.filter.eletric span {
+  color: #eed967;
+}
+
+.filter.fairy span {
+  color: #e296e1;
+}
+
+.filter.fighting span {
+  color: #c44d61;
+}
+
+.filter.ground span {
+  color: #ce8056;
+}
+
+.filter.ice span {
+  color: #8bcec1;
+}
+
+.filter.normal span {
+  color: #a0a29f;
+}
+
+.filter.poison span {
+  color: #ac6aca;
+}
+
+.filter.psychic span {
+  color: #eb8b85;
+}
+
+.filter.rock span {
+  color: #8bcec1;
+}
+
+.filter.grass span {
+  color: #73b861;
+}
+
+.filter.steel span {
+  color: #6594a1;
+}
+
+.filter.water span {
+  color: #88a3d4;
+}
+
+.filter.fire span {
+  color: #f66d6d;
+}
+
+.filter.flying span {
+  color: #a6bbe8;
+}
+
+.filter__icon {
+  width: 2.8rem;
+  height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+}
+
+.filter__name {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 150%;
+  color: #acb9c1;
+}
+
+.card__pokedex {
+  width: 100%;
+  max-width: 28rem;
+  height: 30rem;
+  background-color: #fff;
+  box-shadow: 0px 10px 51px -5px rgba(183, 189, 193, 0.3);
+  border-radius: 12px;
+  position: relative;
+  transition: all 0.3ms;
+}
+
+.card__pokedex:hover {
+  transform: scale(1);
+  box-shadow: 0px 12px 40px -5px rgba(90, 96, 100, 0.3);
+}
+
+.card__pokedex .image__pokedex {
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 1.4rem;
+  position: relative;
+  z-index: 2;
+}
+
+.image__pokedex:after {
+  content: "";
+  width: 16.5rem;
+  height: 16.5rem;
+
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+
+.card__pokedex.bug .image__pokedex:after {
+  background-color: rgba(156, 186, 72, 0.2);
+}
+
+.card__pokedex.dark .image__pokedex:after {
+  background-color: rgba(89, 87, 97, 0.2);
+}
+
+.card__pokedex.dragon .image__pokedex:after {
+  background-color: rgba(44, 106, 193, 0.2);
+}
+
+.card__pokedex.eletric .image__pokedex:after {
+  background-color: rgba(238, 217, 103, 0.2);
+}
+
+.card__pokedex.fairy .image__pokedex:after {
+  background-color: rgba(226, 150, 225, 0.2);
+}
+
+.card__pokedex.fighting .image__pokedex:after {
+  background-color: rgba(196, 77, 97, 0.2);
+}
+
+.card__pokedex.ground .image__pokedex:after {
+  background-color: rgba(206, 128, 86, 0.2);
+}
+
+.card__pokedex.ice .image__pokedex:after {
+  background-color: rgba(139, 206, 193, 0.2);
+}
+
+.card__pokedex.normal .image__pokedex:after {
+  background-color: rgba(160, 162, 159, 0.1);
+}
+
+.card__pokedex.poison .image__pokedex:after {
+  background-color: rgba(172, 106, 202, 0.2);
+}
+
+.card__pokedex.psychic .image__pokedex:after {
+  background-color: rgba(235, 139, 133, 0.2);
+}
+
+.card__pokedex.rock .image__pokedex:after {
+  background-color: rgba(139, 206, 193, 0.2);
+}
+
+.card__pokedex.ghost .image__pokedex:after {
+  background-color: rgba(97, 110, 183, 0.2);
+}
+
+.card__pokedex.grass .image__pokedex:after {
+  background-color: rgba(115, 184, 97, 0.2);
+}
+
+.card__pokedex.stell .image__pokedex:after {
+  background-color: rgba(101, 148, 161, 0.2);
+}
+
+.card__pokedex.water .image__pokedex:after {
+  background-color: rgba(136, 163, 212, 0.2);
+}
+
+.card__pokedex.fire .image__pokedex:after {
+  background-color: rgba(246, 109, 109, 0.1);
+}
+
+.card__pokedex.flying .image__pokedex:after {
+  background-color: rgba(166, 187, 232, 0.2);
+}
+
+.info__pokedex {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 2.8rem;
+}
+
+.info__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.info__text span {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  color: #7a7d80;
+}
+
+.info__icon {
+  margin-bottom: 10px;
+}
+
+.tag-type {
+  display: inline-block;
+  padding: 0 25px;
+  line-height: 2.4rem;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-align: center;
+  letter-spacing: -0.01em;
+  border-radius: 2px;
+}
+
+.tag-type.bug {
+  background: rgba(155, 186, 72, 0.1);
+  color: rgba(155, 186, 72, 1);
+}
+
+.tag-type.dark {
+  background: rgba(89, 87, 97, 0.1);
+  color: rgba(89, 87, 97, 1);
+}
+
+.tag-type.dragon {
+  background: rgba(44, 106, 193, 0.1);
+  color: rgba(44, 106, 193, 1);
+}
+
+.tag-type.eletric {
+  background: rgba(238, 217, 103, 0.1);
+  color: rgba(238, 217, 103, 1);
+}
+
+.tag-type.fairy {
+  background: rgba(226, 150, 225, 0.1);
+  color: rgba(226, 150, 225, 1);
+}
+
+.tag-type.fighting {
+  background: rgba(196, 77, 97, 0.1);
+  color: rgba(196, 77, 97, 1);
+}
+.tag-type.ground {
+  background: rgba(206, 128, 86, 0.1);
+  color: rgba(206, 128, 86, 1);
+}
+
+.tag-type.ice {
+  background: rgba(139, 206, 193, 0.1);
+  color: rgba(139, 206, 193, 1);
+}
+
+.tag-type.normal {
+  background: rgba(160, 162, 159, 0.1);
+  color: rgba(160, 162, 159, 1);
+}
+
+.tag-type.poison {
+  background: rgba(172, 106, 202, 0.1);
+  color: rgba(172, 106, 202, 1);
+}
+
+.tag-type.psychic {
+  background: rgba(235, 139, 133, 0.1);
+  color: rgba(235, 139, 133, 1);
+}
+
+.tag-type.rock {
+  background: rgba(139, 206, 193, 0.1);
+  color: rgba(139, 206, 193, 1);
+}
+
+.tag-type.ghost {
+  background: rgba(97, 110, 183, 0.1);
+  color: rgba(97, 110, 183, 1);
+}
+
+.tag-type.grass {
+  background: rgba(92, 164, 138, 0.1);
+  color: rgba(92, 164, 138, 1);
+}
+
+.tag-type.steal {
+  background: rgba(101, 148, 161, 0.1);
+  color: rgba(101, 148, 161, 1);
+}
+
+.tag-type.water {
+  background: rgba(136, 163, 212, 0.1);
+  color: rgba(136, 163, 212, 1);
+}
+
+.tag-type.fire {
+  background: rgba(233, 99, 3, 0.1);
+  color: rgba(233, 99, 3, 1);
+}
+
+.tag-type.flying {
+  background: rgba(166, 187, 232, 0.1);
+  color: rgba(166, 187, 232, 1);
+}
+
+.load__more {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.01em;
+  color: #3f5db3;
+  background-color: rgba(63, 93, 179, 0.1);
+  padding: 1.4rem 2rem;
+  border-radius: 6px;
+  transition: all 0.3ms;
+}
+
+.load__more:hover {
+  background-color: #3f5db3;
+  color: #fff;
+}

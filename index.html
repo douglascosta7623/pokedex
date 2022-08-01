@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <title>Pokedex API</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="#">
+          <img src="./assets/logo.svg" alt="Logo Pokemon" />
+        </a>
+        <p>Projeto API</p>
+      </div>
+    </header>
+
+    <section class="area__slide">
+      <div class="slide__hero">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="main-area">
+              <div class="container">
+                <div class="slide__hero__content">
+                  <div class="tag">
+                    <div class="icon">
+                      <img src="./assets/bag-red.svg" alt="mochila vermelha" />
+                    </div>
+                    <span>pokedex</span>
+                  </div>
+                  <h1>Who is that Pokémon?</h1>
+                  <p>
+                    The perfect guide for those who want to hunt Pokémons around
+                    the world
+                  </p>
+
+                  <div class="slide__hero__image">
+                    <img src="./assets/lighting.svg" alt="" class="light" />
+                    <img src="./assets/pokeball-red.png" alt="" />
+                  </div>
+                </div>
+
+                <div class="slide__hero__explorer">
+                  <div class="text">
+                    <div class="icon">
+                      <img src="./assets/arrow-down-white.svg" alt="" />
+                    </div>
+                    <span>explore</span>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="main-area">
+              <div class="container">
+                <div class="slide__hero__content">
+                  <div class="tag">
+                    <div class="icon">
+                      <img src="./assets/bag-red.svg" alt="mochila vermelha" />
+                    </div>
+                    <span>pokedex</span>
+                  </div>
+
+                  <h1>Who is that Pokémon?</h1>
+                  <p>
+                    The perfect guide for those who want to hunt Pokémons around
+                    the world
+                  </p>
+
+                  <div class="slide__hero__image">
+                    <img src="./assets/lighting.svg" alt="" class="light" />
+                    <img src="./assets/pokeball-blue.png" alt="" />
+                  </div>
+                </div>
+
+                <div class="slide__hero__explorer">
+                  <div class="text">
+                    <div class="icon">
+                      <img src="./assets/arrow-down-white.svg" alt="" />
+                    </div>
+                    <span>explore</span>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="text">
+          <h3>Projeto de Evidência</h3>
+          <p>Consumindo API Pokemon</p>
+        </div>
+        <a href="https://github.com/douglascosta7623" target="_blank"
+          >build by <br />
+          Douglas Costa</a
+        >
+      </div>
+    </footer>
+
+    <div class="modal" typeModal="grass">
+      <div class="modal__overlay"></div>
+      <div class="modal__box">
+        <button type="button" class="modal__btn-close">
+          <img src="./assets/close.svg" alt="" />
+        </button>
+        <div class="modal__left">
+          <div class="modal__icon">
+            <img src="./assets/icon-types/grass.svg" alt="" />
+          </div>
+          <div class="modal__image">
+            <img src="./assets/bulbasaur.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="modal__right">
+          <div class="modal__name">
+            <h2>Bulbasaur</h2>
+            <span>#001</span>
+          </div>
+          <div class="modal__tags">
+            <ul class="type">
+              <li>
+                <span class="tag-type grass">Grass </span>
+              </li>
+              <li>
+                <span class="tag-type poison">poison </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="modal__info">
+            <ul class="info">
+              <li>
+                <span>Altura</span>
+                <strong>0.7m</strong>
+              </li>
+
+              <li>
+                <span>Weight</span>
+                <strong>6.9kg</strong>
+              </li>
+
+              <li>
+                <span>Abilities</span>
+                <strong>Overgrow</strong>
+              </li>
+            </ul>
+          </div>
+
+          <div class="modal__weak">
+            <h4>Weaknesses</h4>
+            <ul>
+              <li>
+                <span class="tag-type fire">Fire</span>
+              </li>
+
+              <li>
+                <span class="tag-type psychic">Psychic</span>
+              </li>
+
+              <li>
+                <span class="tag-type flying">Flying</span>
+              </li>
+
+              <li>
+                <span class="tag-type ice">Ice</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="modal__stats">
+            <h5>Stats</h5>
+            <div class="stats-group">
+              <div class="item">
+                <span>HP</span>
+                <div class="item__bar-progress">
+                  <div class="item__indicator">
+                    <ul class="item__separator">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <span>Atack</span>
+                <div class="item__bar-progress">
+                  <div class="item__indicator">
+                    <ul class="item__separator">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <span>Defense</span>
+                <div class="item__bar-progress">
+                  <div class="item__indicator">
+                    <ul class="item__separator">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <span>Sp. attack</span>
+                <div class="item__bar-progress">
+                  <div class="item__indicator">
+                    <ul class="item__separator">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <span>Sp. defense</span>
+                <div class="item__bar-progress">
+                  <div class="item__indicator">
+                    <ul class="item__separator">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <span>Speed</span>
+                <div class="item__bar-progress">
+                  <div class="item__indicator">
+                    <ul class="item__separator">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/swiper.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
