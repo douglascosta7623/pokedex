@@ -43,7 +43,11 @@
 
                   <div class="slide__hero__image">
                     <img src="./assets/lighting.svg" alt="" class="light" />
-                    <img src="./assets/pokeball-red.png" alt="" />
+                    <img
+                      class="pokeball"
+                      src="./assets/pokeball-red.png"
+                      alt=""
+                    />
                   </div>
                 </div>
 
@@ -60,18 +64,18 @@
             </div>
           </div>
 
-          <div class="swiper-slide">
+          <div class="swiper-slide blue">
             <div class="main-area">
               <div class="container">
                 <div class="slide__hero__content">
-                  <div class="tag">
+                  <div class="tag blue__tag">
                     <div class="icon">
                       <img src="./assets/bag-red.svg" alt="mochila vermelha" />
                     </div>
                     <span>pokedex</span>
                   </div>
 
-                  <h1>Who is that Pokémon?</h1>
+                  <h1>Catch them all!</h1>
                   <p>
                     The perfect guide for those who want to hunt Pokémons around
                     the world
@@ -79,13 +83,17 @@
 
                   <div class="slide__hero__image">
                     <img src="./assets/lighting.svg" alt="" class="light" />
-                    <img src="./assets/pokeball-blue.png" alt="" />
+                    <img
+                      src="./assets/pokeball-blue.png"
+                      class="pokeball"
+                      alt=""
+                    />
                   </div>
                 </div>
 
                 <div class="slide__hero__explorer">
                   <div class="text">
-                    <div class="icon">
+                    <div class="icon blue">
                       <img src="./assets/arrow-down-white.svg" alt="" />
                     </div>
                     <span>explore</span>
@@ -94,6 +102,279 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info__all">
+      <div class="container">
+        <div class="info__search">
+          <h2>Select your pokemon</h2>
+          <div class="search">
+            <input type="text" placeholder="Search name or code" />
+            <button type="button">
+              <img src="./assets/icon-search.svg" alt="Icone de pesquisa" />
+            </button>
+          </div>
+        </div>
+        <div class="info__pokemon">
+          <div class="pokemon__left">
+            <ul>
+              <li>
+                <button class="filter all active">
+                  <div class="filter__icon">
+                    <img src="./assets/icon-all.svg" alt="ghost" />
+                  </div>
+                  <span class="filter__name">All</span>
+                </button>
+              </li>
+
+              <li>
+                <button class="filter ghost">
+                  <div class="filter__icon">
+                    <img src="./assets/icon-types/ghost.svg" alt="ghost" />
+                  </div>
+                  <span class="filter__name">Ghost</span>
+                </button>
+              </li>
+
+              <li>
+                <button class="filter ground">
+                  <div class="filter__icon">
+                    <img src="./assets/icon-types/ground.svg" alt="stone" />
+                  </div>
+                  <span class="filter__name">Stone</span>
+                </button>
+              </li>
+
+              <li>
+                <button class="filter grass">
+                  <div class="filter__icon">
+                    <img src="./assets/icon-types/grass.svg" alt="stone" />
+                  </div>
+                  <span class="filter__name">Plants</span>
+                </button>
+              </li>
+
+              <li>
+                <button class="filter dragon">
+                  <div class="filter__icon">
+                    <img src="./assets/icon-types/dragon.svg" alt="dragon" />
+                  </div>
+                  <span class="filter__name">Dragon</span>
+                </button>
+              </li>
+
+              <li>
+                <button class="filter steel">
+                  <div class="filter__icon">
+                    <img src="./assets/icon-types/steel.svg" alt="metal" />
+                  </div>
+                  <span class="filter__name">Metal</span>
+                </button>
+              </li>
+
+              <li>
+                <button class="filter eletric">
+                  <div class="filter__icon">
+                    <img
+                      src="./assets/icon-types/electric.svg"
+                      alt="electric"
+                    />
+                  </div>
+                  <span class="filter__name">Shock</span>
+                </button>
+              </li>
+
+              <li>
+                <button class="filter water">
+                  <div class="filter__icon">
+                    <img src="./assets/icon-types/water.svg" alt="water" />
+                  </div>
+                  <span class="filter__name">Water </span>
+                </button>
+              </li>
+
+              <li>
+                <button class="filter fire">
+                  <div class="filter__icon">
+                    <img src="./assets/icon-types/fire.svg" alt="fire" />
+                  </div>
+                  <span class="filter__name">Fire </span>
+                </button>
+              </li>
+
+              <li>
+                <button class="filter fire">
+                  <div class="filter__icon">
+                    <img src="./assets/icon-types/fire.svg" alt="fire" />
+                  </div>
+                  <span class="filter__name">Fire </span>
+                </button>
+              </li>
+
+              <li>
+                <button class="filter bug">
+                  <div class="filter__icon">
+                    <img src="./assets/icon-types/bug.svg" alt="bug" />
+                  </div>
+                  <span class="filter__name">Insect</span>
+                </button>
+              </li>
+
+              <li>
+                <button class="filter flying">
+                  <div class="filter__icon">
+                    <img src="./assets/icon-types/flying.svg" alt="flying" />
+                  </div>
+                  <span class="filter__name">Flying</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="pokemon__right">
+            <div class="pokemon__right__top">
+              <img src="./assets/icon-pokeball.svg" alt="icone pokeball" />
+              <span><strong id="quantity-pokemon">150</strong> Pokémons </span>
+            </div>
+            <div class="pokemon__right__all">
+              <button class="card__pokedex grass">
+                <div class="image__pokedex">
+                  <img src="./assets/bulbasaur.svg" alt="" />
+                </div>
+                <div class="info__pokedex">
+                  <div class="info__text">
+                    <span>#001</span>
+                    <h3>Bulbasauru</h3>
+                  </div>
+                  <div class="info__icon">
+                    <img src="./assets/icon-types/grass.svg" alt="" />
+                  </div>
+                </div>
+              </button>
+
+              <button class="card__pokedex grass">
+                <div class="image__pokedex">
+                  <img src="./assets/bulbasaur.svg" alt="" />
+                </div>
+                <div class="info__pokedex">
+                  <div class="info__text">
+                    <span>#001</span>
+                    <h3>Bulbasauru</h3>
+                  </div>
+                  <div class="info__icon">
+                    <img src="./assets/icon-types/grass.svg" alt="" />
+                  </div>
+                </div>
+              </button>
+
+              <button class="card__pokedex grass">
+                <div class="image__pokedex">
+                  <img src="./assets/bulbasaur.svg" alt="" />
+                </div>
+                <div class="info__pokedex">
+                  <div class="info__text">
+                    <span>#001</span>
+                    <h3>Bulbasauru</h3>
+                  </div>
+                  <div class="info__icon">
+                    <img src="./assets/icon-types/grass.svg" alt="" />
+                  </div>
+                </div>
+              </button>
+
+              <button class="card__pokedex grass">
+                <div class="image__pokedex">
+                  <img src="./assets/bulbasaur.svg" alt="" />
+                </div>
+                <div class="info__pokedex">
+                  <div class="info__text">
+                    <span>#001</span>
+                    <h3>Bulbasauru</h3>
+                  </div>
+                  <div class="info__icon">
+                    <img src="./assets/icon-types/grass.svg" alt="" />
+                  </div>
+                </div>
+              </button>
+
+              <button class="card__pokedex grass">
+                <div class="image__pokedex">
+                  <img src="./assets/bulbasaur.svg" alt="" />
+                </div>
+                <div class="info__pokedex">
+                  <div class="info__text">
+                    <span>#001</span>
+                    <h3>Bulbasauru</h3>
+                  </div>
+                  <div class="info__icon">
+                    <img src="./assets/icon-types/grass.svg" alt="" />
+                  </div>
+                </div>
+              </button>
+
+              <button class="card__pokedex grass">
+                <div class="image__pokedex">
+                  <img src="./assets/bulbasaur.svg" alt="" />
+                </div>
+                <div class="info__pokedex">
+                  <div class="info__text">
+                    <span>#001</span>
+                    <h3>Bulbasauru</h3>
+                  </div>
+                  <div class="info__icon">
+                    <img src="./assets/icon-types/grass.svg" alt="" />
+                  </div>
+                </div>
+              </button>
+
+              <button class="card__pokedex grass">
+                <div class="image__pokedex">
+                  <img src="./assets/bulbasaur.svg" alt="" />
+                </div>
+                <div class="info__pokedex">
+                  <div class="info__text">
+                    <span>#001</span>
+                    <h3>Bulbasauru</h3>
+                  </div>
+                  <div class="info__icon">
+                    <img src="./assets/icon-types/grass.svg" alt="" />
+                  </div>
+                </div>
+              </button>
+
+              <button class="card__pokedex grass">
+                <div class="image__pokedex">
+                  <img src="./assets/bulbasaur.svg" alt="" />
+                </div>
+                <div class="info__pokedex">
+                  <div class="info__text">
+                    <span>#001</span>
+                    <h3>Bulbasauru</h3>
+                  </div>
+                  <div class="info__icon">
+                    <img src="./assets/icon-types/grass.svg" alt="" />
+                  </div>
+                </div>
+              </button>
+
+              <button class="card__pokedex grass">
+                <div class="image__pokedex">
+                  <img src="./assets/bulbasaur.svg" alt="" />
+                </div>
+                <div class="info__pokedex">
+                  <div class="info__text">
+                    <span>#001</span>
+                    <h3>Bulbasauru</h3>
+                  </div>
+                  <div class="info__icon">
+                    <img src="./assets/icon-types/grass.svg" alt="" />
+                  </div>
+                </div>
+              </button>
+            </div>
+            <button class="load__more" type="button">Load more Pokémons</button>
           </div>
         </div>
       </div>

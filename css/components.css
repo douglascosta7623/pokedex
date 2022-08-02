@@ -92,8 +92,13 @@
   transition: all 0.3s;
 }
 
-.filter:hover {
+.filter:hover,
+.active {
   filter: grayscale(0%);
+}
+
+.filter.all span {
+  color: rgba(62, 117, 195, 1);
 }
 
 .filter.ghost span {

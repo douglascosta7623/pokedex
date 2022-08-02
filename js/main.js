@@ -21,7 +21,7 @@ container.addEventListener("click", (event) => {
 
   closeModal();
 });
-var slide_hero = new Swiper(".slide__hero", {
+let slide_hero = new Swiper(".slide__hero", {
   effect: "fade",
   pagination: {
     el: ".slide__hero .main-area .slide__hero__explorer .swiper-pagination",
