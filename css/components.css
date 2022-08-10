@@ -437,9 +437,18 @@
   padding: 1.4rem 2rem;
   border-radius: 6px;
   transition: all 0.3ms;
+  display: table;
+  margin: 0 auto;
+  margin-top: 6.8rem;
 }
 
 .load__more:hover {
   background-color: #3f5db3;
   color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .card__pokedex {
+    max-width: 100%;
+  }
 }
