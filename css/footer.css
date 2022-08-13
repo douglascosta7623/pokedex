@@ -32,3 +32,27 @@ footer a {
   text-align: right;
   color: #ffffff;
 }
+
+@media (max-width: 560px) {
+  footer {
+    padding: 4rem;
+  }
+
+  footer .container {
+    flex-direction: column;
+  }
+
+  footer .text {
+    margin-bottom: 3rem;
+  }
+
+  footer h3,
+  p {
+    text-align: center;
+  }
+
+  footer .text {
+    display: block;
+    text-align: center;
+  }
+}

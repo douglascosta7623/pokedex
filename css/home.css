@@ -173,13 +173,30 @@
   z-index: 3;
 }
 
-.info__all .pokemon__select {
+.info__all .info__pokemon .pokemon__right .pokemon__select {
   display: none;
   position: relative;
   margin-bottom: 5.5rem;
 }
 
-.info__all .pokemon__select .item__selected {
+.info__all
+  .info__pokemon
+  .pokemon__right
+  .pokemon__select.active
+  .drop__select {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.info__all
+  .info__pokemon
+  .pokemon__right
+  .pokemon__select.active
+  .item__selected {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.info__all .info__pokemon .pokemon__right .pokemon__select .item__selected {
   cursor: pointer;
   width: 100%;
   height: 5.6rem;
@@ -190,21 +207,32 @@
   border-radius: 1rem;
   display: flex;
   align-items: center;
+  transition: all 0.3ms;
 }
 
-.info__all .pokemon__select .item__selected span {
+.info__all
+  .info__pokemon
+  .pokemon__right
+  .pokemon__select
+  .item__selected
+  span {
   color: #7a7d80;
   opacity: 0.6;
   font-size: 1.4rem;
   margin-right: 0.4rem;
 }
 
-.info__all .pokemon__select .item__selected span {
+.info__all
+  .info__pokemon
+  .pokemon__right
+  .pokemon__select
+  .item__selected
+  strong {
   color: #7a7d80;
   font-size: 1.4rem;
 }
 
-.info__all .drop__select {
+.info__all .info__pokemon .pokemon__right .pokemon__select .drop__select {
   position: absolute;
   top: 5.6rem;
   height: 22.3rem;
@@ -213,8 +241,25 @@
   background-color: #ffffff;
   padding: 2.1rem;
   border-top: 0;
-  z-index: 10;
+  z-index: 2 !important;
   overflow-y: auto;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.info__all .drop__select::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.info__all .drop__select::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: transparent;
+}
+
+.info__all .drop__select::-webkit-scrollbar-thumb {
+  background-color: #3d75c2;
+  border-radius: 0.6rem;
 }
 
 .info__all .drop__select li:not(:first-child) button {
@@ -445,7 +490,7 @@
     grid-gap: 1.6rem;
   }
 
-  .info__all .pokemon__select {
+  .info__all .info__pokemon .pokemon__right .pokemon__select {
     display: block;
   }
 }

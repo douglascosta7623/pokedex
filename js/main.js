@@ -27,3 +27,9 @@ let slide_hero = new Swiper(".slide__hero", {
     el: ".slide__hero .main-area .slide__hero__explorer .swiper-pagination",
   },
 });
+
+const btnSelectCustom = getElement(".js-open-select-pokemon");
+
+btnSelectCustom.addEventListener("click", () => {
+  btnSelectCustom.parentElement.classList.toggle("active");
+});
