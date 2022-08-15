@@ -124,3 +124,7 @@ container.addEventListener("click", (event) => {
 
   closeModal();
 });
+
+const areaTypes = document.getElementById("js-type-area");
+
+console.log(areaTypes);

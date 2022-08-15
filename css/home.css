@@ -451,7 +451,7 @@
   }
 
   .info__all .pokemon__right {
-    padding-left: 12px;
+    /* padding-left: 12px; */
   }
 }
 
@@ -491,5 +491,6 @@
 
   .info__all .info__pokemon .pokemon__right .pokemon__select {
     display: block;
+    z-index: 10;
   }
 }
