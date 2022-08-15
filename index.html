@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link
       rel="stylesheet"
+      type="text/css"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <title>Pokedex API</title>
@@ -236,7 +237,10 @@
           <div class="pokemon__right">
             <div class="pokemon__right__top">
               <img src="./assets/icon-pokeball.svg" alt="icone pokeball" />
-              <span><strong id="quantity-pokemon">150</strong> Pokémons </span>
+              <span
+                ><strong id="quantity-pokemon"></strong>
+                Pokémons
+              </span>
             </div>
 
             <div class="pokemon__select">
@@ -330,142 +334,7 @@
                 </li>
               </ul>
             </div>
-            <div class="pokemon__right__all">
-              <button class="card__pokedex grass">
-                <div class="image__pokedex">
-                  <img src="./assets/bulbasaur.svg" alt="" />
-                </div>
-                <div class="info__pokedex">
-                  <div class="info__text">
-                    <span>#001</span>
-                    <h3>Bulbasauru</h3>
-                  </div>
-                  <div class="info__icon">
-                    <img src="./assets/icon-types/grass.svg" alt="" />
-                  </div>
-                </div>
-              </button>
-
-              <button class="card__pokedex grass">
-                <div class="image__pokedex">
-                  <img src="./assets/bulbasaur.svg" alt="" />
-                </div>
-                <div class="info__pokedex">
-                  <div class="info__text">
-                    <span>#001</span>
-                    <h3>Bulbasauru</h3>
-                  </div>
-                  <div class="info__icon">
-                    <img src="./assets/icon-types/grass.svg" alt="" />
-                  </div>
-                </div>
-              </button>
-
-              <button class="card__pokedex grass">
-                <div class="image__pokedex">
-                  <img src="./assets/bulbasaur.svg" alt="" />
-                </div>
-                <div class="info__pokedex">
-                  <div class="info__text">
-                    <span>#001</span>
-                    <h3>Bulbasauru</h3>
-                  </div>
-                  <div class="info__icon">
-                    <img src="./assets/icon-types/grass.svg" alt="" />
-                  </div>
-                </div>
-              </button>
-
-              <button class="card__pokedex grass">
-                <div class="image__pokedex">
-                  <img src="./assets/bulbasaur.svg" alt="" />
-                </div>
-                <div class="info__pokedex">
-                  <div class="info__text">
-                    <span>#001</span>
-                    <h3>Bulbasauru</h3>
-                  </div>
-                  <div class="info__icon">
-                    <img src="./assets/icon-types/grass.svg" alt="" />
-                  </div>
-                </div>
-              </button>
-
-              <button class="card__pokedex grass">
-                <div class="image__pokedex">
-                  <img src="./assets/bulbasaur.svg" alt="" />
-                </div>
-                <div class="info__pokedex">
-                  <div class="info__text">
-                    <span>#001</span>
-                    <h3>Bulbasauru</h3>
-                  </div>
-                  <div class="info__icon">
-                    <img src="./assets/icon-types/grass.svg" alt="" />
-                  </div>
-                </div>
-              </button>
-
-              <button class="card__pokedex grass">
-                <div class="image__pokedex">
-                  <img src="./assets/bulbasaur.svg" alt="" />
-                </div>
-                <div class="info__pokedex">
-                  <div class="info__text">
-                    <span>#001</span>
-                    <h3>Bulbasauru</h3>
-                  </div>
-                  <div class="info__icon">
-                    <img src="./assets/icon-types/grass.svg" alt="" />
-                  </div>
-                </div>
-              </button>
-
-              <button class="card__pokedex grass">
-                <div class="image__pokedex">
-                  <img src="./assets/bulbasaur.svg" alt="" />
-                </div>
-                <div class="info__pokedex">
-                  <div class="info__text">
-                    <span>#001</span>
-                    <h3>Bulbasauru</h3>
-                  </div>
-                  <div class="info__icon">
-                    <img src="./assets/icon-types/grass.svg" alt="" />
-                  </div>
-                </div>
-              </button>
-
-              <button class="card__pokedex grass">
-                <div class="image__pokedex">
-                  <img src="./assets/bulbasaur.svg" alt="" />
-                </div>
-                <div class="info__pokedex">
-                  <div class="info__text">
-                    <span>#001</span>
-                    <h3>Bulbasauru</h3>
-                  </div>
-                  <div class="info__icon">
-                    <img src="./assets/icon-types/grass.svg" alt="" />
-                  </div>
-                </div>
-              </button>
-
-              <button class="card__pokedex grass">
-                <div class="image__pokedex">
-                  <img src="./assets/bulbasaur.svg" alt="" />
-                </div>
-                <div class="info__pokedex">
-                  <div class="info__text">
-                    <span>#001</span>
-                    <h3>Bulbasauru</h3>
-                  </div>
-                  <div class="info__icon">
-                    <img src="./assets/icon-types/grass.svg" alt="" />
-                  </div>
-                </div>
-              </button>
-            </div>
+            <div class="pokemon__right__all" id="js-list-pokemon"></div>
             <button class="load__more" type="button">Load more Pokémons</button>
           </div>
         </div>
@@ -487,7 +356,10 @@
     <div class="modal" typeModal="grass">
       <div class="modal__overlay"></div>
       <div class="modal__box">
-        <button type="button" class="modal__btn-close">
+        <button
+          type="button"
+          class="modal__btn-close js-close-modal-details-pokemon"
+        >
           <img src="./assets/close.svg" alt="" />
         </button>
         <div class="modal__left">
@@ -647,6 +519,7 @@
       </div>
     </div>
 
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/main.js"></script>
   </body>

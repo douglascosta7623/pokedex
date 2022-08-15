@@ -450,16 +450,15 @@
     margin-bottom: 4rem;
   }
 
-  .info__all .pokemon__left {
-    display: none;
-  }
-
   .info__all .pokemon__right {
-    padding-left: 0px;
+    padding-left: 12px;
   }
 }
 
 @media (max-width: 560px) {
+  .info__all .pokemon__left {
+    display: none;
+  }
   .info__all {
     margin-top: -34rem;
     padding-top: 12rem;

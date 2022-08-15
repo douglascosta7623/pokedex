@@ -217,6 +217,10 @@
   z-index: 2;
 }
 
+.card__pokedex .image__pokedex .thumb-img {
+  max-width: 14.2rem;
+}
+
 .image__pokedex:after {
   content: "";
   width: 16.5rem;
