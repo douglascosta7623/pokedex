@@ -126,5 +126,74 @@ container.addEventListener("click", (event) => {
 });
 
 const areaTypes = document.getElementById("js-type-area");
+const areaTypesMobile = document.getElementById("js-drop-select");
 
-console.log(areaTypes);
+axios({
+  method: "GET",
+  url: "https://pokeapi.co/api/v2/type",
+}).then((response) => {
+  const { results } = response.data;
+  // console.log(results);
+  results.forEach((type, index) => {
+    if (index < 18) {
+      let itemList = document.createElement("li");
+      areaTypes.appendChild(itemList);
+
+      let buttonItemList = document.createElement("button");
+      buttonItemList.classList = `filter ${type.name}`;
+      itemList.appendChild(buttonItemList);
+
+      let iconFilter = document.createElement("div");
+      iconFilter.classList = "filter__icon";
+      buttonItemList.appendChild(iconFilter);
+
+      let iconImageFilter = document.createElement("img");
+      iconImageFilter.setAttribute(
+        "src",
+        `/assets/icon-types/${type.name}.svg`
+      );
+      iconFilter.appendChild(iconImageFilter);
+
+      let filterLegend = document.createElement("span");
+      filterLegend.classList = "filter__name";
+      filterLegend.textContent = upperName(type.name);
+      buttonItemList.appendChild(filterLegend);
+
+      //Mobile
+
+      let itemListMobile = document.createElement("li");
+      areaTypesMobile.appendChild(itemListMobile);
+
+      let buttonItemListMobile = document.createElement("button");
+      buttonItemListMobile.classList = `filter ${type.name}`;
+      itemListMobile.appendChild(buttonItemListMobile);
+
+      let iconFilterMobile = document.createElement("div");
+      iconFilterMobile.classList = "filter__icon";
+      buttonItemListMobile.appendChild(iconFilterMobile);
+
+      let iconImageFilterMobile = document.createElement("img");
+      iconImageFilterMobile.setAttribute(
+        "src",
+        `/assets/icon-types/${type.name}.svg`
+      );
+      iconFilterMobile.appendChild(iconImageFilterMobile);
+
+      let filterLegendMobile = document.createElement("span");
+      filterLegendMobile.classList = "filter__name";
+      filterLegendMobile.textContent = upperName(type.name);
+      buttonItemListMobile.appendChild(filterLegendMobile);
+    }
+  });
+});
+
+{
+  /* <li>
+<button class="filter fire active">
+<div class="filter__icon">
+  <img src="./assets/icon-types/fire.svg" alt="fire" />
+</div>
+<span class="filter__name">Fire</span>
+</button>
+</li> */
+}
