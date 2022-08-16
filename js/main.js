@@ -150,7 +150,7 @@ axios({
       let iconImageFilter = document.createElement("img");
       iconImageFilter.setAttribute(
         "src",
-        `/assets/icon-types/${type.name}.svg`
+        `./assets/icon-types/${type.name}.svg`
       );
       iconFilter.appendChild(iconImageFilter);
 
@@ -175,7 +175,7 @@ axios({
       let iconImageFilterMobile = document.createElement("img");
       iconImageFilterMobile.setAttribute(
         "src",
-        `/assets/icon-types/${type.name}.svg`
+        `./assets/icon-types/${type.name}.svg`
       );
       iconFilterMobile.appendChild(iconImageFilterMobile);
 
