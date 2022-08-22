@@ -457,6 +457,9 @@
 }
 
 @media (max-width: 560px) {
+  .info__all .pokemon__right {
+    padding-left: 0;
+  }
   .info__all .pokemon__left {
     display: none;
   }

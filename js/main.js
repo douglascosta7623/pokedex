@@ -187,13 +187,15 @@ axios({
   });
 });
 
-{
-  /* <li>
-<button class="filter fire active">
-<div class="filter__icon">
-  <img src="./assets/icon-types/fire.svg" alt="fire" />
-</div>
-<span class="filter__name">Fire</span>
-</button>
-</li> */
+//LoadMore
+const loadBtn = document.getElementById("js-loadmore");
+let countPagination = 9;
+
+function showMorePokemon() {
+  listPokemons(
+    `https://pokeapi.co/api/v2/pokemon?limit=9&offset=${countPagination}`
+  );
+  console.log((countPagination += 9));
 }
+
+loadBtn.addEventListener("click", showMorePokemon);
