@@ -114,8 +114,12 @@
         <div class="info__search">
           <h2>Select your pokemon</h2>
           <div class="search">
-            <input type="text" placeholder="Search name or code" />
-            <button type="button">
+            <input
+              type="text"
+              placeholder="Search name or code"
+              id="js-input-search"
+            />
+            <button type="button" id="js-btn-search">
               <img src="./assets/icon-search.svg" alt="Icone de pesquisa" />
             </button>
           </div>
@@ -124,7 +128,7 @@
           <div class="pokemon__left">
             <ul id="js-type-area">
               <li>
-                <button class="filter all active">
+                <button class="filter all active" code-type="">
                   <div class="filter__icon">
                     <img src="./assets/icon-all.svg" alt="ghost" />
                   </div>
@@ -149,7 +153,7 @@
               </button>
               <ul class="drop__select" id="js-drop-select">
                 <li>
-                  <button class="filter all active">
+                  <button class="filter all active" code-type="">
                     <div class="filter__icon">
                       <img src="./assets/icon-all.svg" alt="ghost" />
                     </div>
