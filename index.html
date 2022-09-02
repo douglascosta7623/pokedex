@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon" />
 
     <link rel="stylesheet" href="./css/style.css" />
 
@@ -183,7 +184,7 @@
       </div>
     </footer>
 
-    <div class="modal" typeModal="grass">
+    <div class="modal" typeModal="grass" id="js-modal-details">
       <div class="modal__overlay"></div>
       <div class="modal__box">
         <button
@@ -194,67 +195,44 @@
         </button>
         <div class="modal__left">
           <div class="modal__icon">
-            <img src="./assets/icon-types/grass.svg" alt="" />
+            <img src="" alt="" id="js-icon-pokemon-details" />
           </div>
           <div class="modal__image">
-            <img src="./assets/bulbasaur.svg" alt="" />
+            <img src="" alt="" id="js-image-pokemon-details" />
           </div>
         </div>
 
         <div class="modal__right">
           <div class="modal__name">
-            <h2>Bulbasaur</h2>
-            <span>#001</span>
+            <h2 id="js-modal-namePokemon"></h2>
+            <span id="js-modal-idPokemon"></span>
           </div>
           <div class="modal__tags">
-            <ul class="type">
-              <li>
-                <span class="tag-type grass">Grass </span>
-              </li>
-              <li>
-                <span class="tag-type poison">poison </span>
-              </li>
-            </ul>
+            <ul class="type" id="js-modal-types"></ul>
           </div>
 
           <div class="modal__info">
-            <ul class="info">
+            <ul class="info" id="js-list-info">
               <li>
-                <span>Altura</span>
-                <strong>0.7m</strong>
+                <span id="js-span-height">Height</span>
+                <strong id="js-strong-height">0.7m</strong>
               </li>
 
               <li>
                 <span>Weight</span>
-                <strong>6.9kg</strong>
+                <strong id="js-strong-weight">6.9kg</strong>
               </li>
 
               <li>
                 <span>Abilities</span>
-                <strong>Overgrow</strong>
+                <strong id="js-strong-abilities">Overgrow</strong>
               </li>
             </ul>
           </div>
 
           <div class="modal__weak">
             <h4>Weaknesses</h4>
-            <ul>
-              <li>
-                <span class="tag-type fire">Fire</span>
-              </li>
-
-              <li>
-                <span class="tag-type psychic">Psychic</span>
-              </li>
-
-              <li>
-                <span class="tag-type flying">Flying</span>
-              </li>
-
-              <li>
-                <span class="tag-type ice">Ice</span>
-              </li>
-            </ul>
+            <ul id="js-weaknesses-pokemon"></ul>
           </div>
 
           <div class="modal__stats">
@@ -263,7 +241,7 @@
               <div class="item">
                 <span>HP</span>
                 <div class="item__bar-progress">
-                  <div class="item__indicator">
+                  <div class="item__indicator" id="js-stats-hp">
                     <ul class="item__separator">
                       <li></li>
                       <li></li>
@@ -277,7 +255,7 @@
               <div class="item">
                 <span>Atack</span>
                 <div class="item__bar-progress">
-                  <div class="item__indicator">
+                  <div class="item__indicator" id="js-stats-attack">
                     <ul class="item__separator">
                       <li></li>
                       <li></li>
@@ -291,7 +269,7 @@
               <div class="item">
                 <span>Defense</span>
                 <div class="item__bar-progress">
-                  <div class="item__indicator">
+                  <div class="item__indicator" id="js-stats-defense">
                     <ul class="item__separator">
                       <li></li>
                       <li></li>
@@ -305,7 +283,7 @@
               <div class="item">
                 <span>Sp. attack</span>
                 <div class="item__bar-progress">
-                  <div class="item__indicator">
+                  <div class="item__indicator" id="js-stats-sp_attack">
                     <ul class="item__separator">
                       <li></li>
                       <li></li>
@@ -319,7 +297,7 @@
               <div class="item">
                 <span>Sp. defense</span>
                 <div class="item__bar-progress">
-                  <div class="item__indicator">
+                  <div class="item__indicator" id="js-stats-sp_defense">
                     <ul class="item__separator">
                       <li></li>
                       <li></li>
@@ -333,7 +311,7 @@
               <div class="item">
                 <span>Speed</span>
                 <div class="item__bar-progress">
-                  <div class="item__indicator">
+                  <div class="item__indicator" id="js-stats-speed">
                     <ul class="item__separator">
                       <li></li>
                       <li></li>

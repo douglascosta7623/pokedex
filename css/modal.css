@@ -22,76 +22,76 @@
   transform: translateY(0);
 }
 
-.modal[typeModal="bug"] .modal__left {
-  background-image: url("../assets/bg-types/bug.svg");
+.modal[typeModal='bug'] .modal__left {
+  background-image: url('../assets/bg-types/bug.svg');
 }
 
-.modal[typeModal="dark"] .modal__left {
-  background-image: url("../assets/bg-types/dark.svg");
+.modal[typeModal='dark'] .modal__left {
+  background-image: url('../assets/bg-types/dark.svg');
 }
 
-.modal[typeModal="dragon"] .modal__left {
-  background-image: url("../assets/bg-types/dragon.svg");
+.modal[typeModal='dragon'] .modal__left {
+  background-image: url('../assets/bg-types/dragon.svg');
 }
 
-.modal[typeModal="eletric"] .modal__left {
-  background-image: url("../assets/bg-types/eletric.svg");
+.modal[typeModal='eletric'] .modal__left {
+  background-image: url('../assets/bg-types/eletric.svg');
 }
 
-.modal[typeModal="fairy"] .modal__left {
-  background-image: url("../assets/bg-types/fairy.svg");
+.modal[typeModal='fairy'] .modal__left {
+  background-image: url('../assets/bg-types/fairy.svg');
 }
 
-.modal[typeModal="fighting"] .modal__left {
-  background-image: url("../assets/bg-types/fighting.svg");
+.modal[typeModal='fighting'] .modal__left {
+  background-image: url('../assets/bg-types/fighting.svg');
 }
 
-.modal[typeModal="fire"] .modal__left {
-  background-image: url("../assets/bg-types/fire.svg");
+.modal[typeModal='fire'] .modal__left {
+  background-image: url('../assets/bg-types/fire.svg');
 }
 
-.modal[typeModal="flying"] .modal__left {
-  background-image: url("../assets/bg-types/flying.svg");
+.modal[typeModal='flying'] .modal__left {
+  background-image: url('../assets/bg-types/flying.svg');
 }
 
-.modal[typeModal="ghost"] .modal__left {
-  background-image: url("../assets/bg-types/ghost.svg");
+.modal[typeModal='ghost'] .modal__left {
+  background-image: url('../assets/bg-types/ghost.svg');
 }
 
-.modal[typeModal="grass"] .modal__left {
-  background-image: url("../assets/bg-types/grass.svg");
+.modal[typeModal='grass'] .modal__left {
+  background-image: url('../assets/bg-types/grass.svg');
 }
 
-.modal[typeModal="ground"] .modal__left {
-  background-image: url("../assets/bg-types/ground.svg");
+.modal[typeModal='ground'] .modal__left {
+  background-image: url('../assets/bg-types/ground.svg');
 }
 
-.modal[typeModal="ice"] .modal__left {
-  background-image: url("../assets/bg-types/ice.svg");
+.modal[typeModal='ice'] .modal__left {
+  background-image: url('../assets/bg-types/ice.svg');
 }
 
-.modal[typeModal="normal"] .modal__left {
-  background-image: url("../assets/bg-types/normal.svg");
+.modal[typeModal='normal'] .modal__left {
+  background-image: url('../assets/bg-types/normal.svg');
 }
 
-.modal[typeModal="poison"] .modal__left {
-  background-image: url("../assets/bg-types/poison.svg");
+.modal[typeModal='poison'] .modal__left {
+  background-image: url('../assets/bg-types/poison.svg');
 }
 
-.modal[typeModal="psychic"] .modal__left {
-  background-image: url("../assets/bg-types/psychic.svg");
+.modal[typeModal='psychic'] .modal__left {
+  background-image: url('../assets/bg-types/psychic.svg');
 }
 
-.modal[typeModal="rock"] .modal__left {
-  background-image: url("../assets/bg-types/rock.svg");
+.modal[typeModal='rock'] .modal__left {
+  background-image: url('../assets/bg-types/rock.svg');
 }
 
-.modal[typeModal="steel"] .modal__left {
-  background-image: url("../assets/bg-types/steel.svg");
+.modal[typeModal='steel'] .modal__left {
+  background-image: url('../assets/bg-types/steel.svg');
 }
 
-.modal[typeModal="water"] .modal__left {
-  background-image: url("../assets/bg-types/water.svg");
+.modal[typeModal='water'] .modal__left {
+  background-image: url('../assets/bg-types/water.svg');
 }
 
 .modal__overlay {
@@ -168,6 +168,7 @@
 
 .modal__right {
   padding: 3.5rem 7.2rem 2.9rem 7.4rem;
+  width: 100%;
 }
 
 .modal__name {
@@ -178,7 +179,7 @@
 }
 
 .modal__name h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 2.8rem;
   line-height: 3.4rem;
@@ -188,7 +189,7 @@
 }
 
 .modal__name span {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   position: relative;
   top: -5;
   font-size: 1.6rem;
@@ -198,7 +199,7 @@
   color: #7a7d80;
 }
 .modal__tags {
-  margin-bottom: 3.2rem;
+  margin-bottom: 1.5rem;
 }
 
 .modal__tags .type {
@@ -209,7 +210,7 @@
 }
 
 .modal__info {
-  margin-bottom: 3.2rem;
+  margin-bottom: 1.5rem;
 }
 
 .modal__info .info {
@@ -232,7 +233,7 @@
 }
 
 .modal__info li strong {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.7rem;
@@ -242,7 +243,7 @@
 }
 
 .modal__weak {
-  margin-bottom: 3.2rem;
+  margin-bottom: 1rem;
 }
 
 .modal__weak h4,
@@ -251,7 +252,7 @@
   font-size: 1.3rem;
   line-height: 1.6rem;
   letter-spacing: -0.01em;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1rem;
   color: #4d5053;
 }
 
@@ -262,8 +263,11 @@
   flex-wrap: wrap;
 }
 
-.modal__weak ul li:not(:first-child) {
-  margin-left: 10px;
+.modal__weak ul li {
+  margin-bottom: 1rem;
+}
+.modal__weak ul li:not(:last-child) {
+  margin-right: 1rem;
 }
 
 .modal__stats h5 {
@@ -378,6 +382,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1rem;
+  }
+
+  #js-strong-height,
+  #js-strong-weight {
+    text-align: center;
   }
 
   .modal__right .modal__weak ul li:not(:first-child) {

@@ -117,7 +117,7 @@
   color: #2c6ac1;
 }
 
-.filter.eletric span {
+.filter.electric span {
   color: #eed967;
 }
 
@@ -222,7 +222,7 @@
 }
 
 .image__pokedex:after {
-  content: "";
+  content: '';
   width: 16.5rem;
   height: 16.5rem;
 
@@ -243,7 +243,7 @@
   background-color: rgba(44, 106, 193, 0.2);
 }
 
-.card__pokedex.eletric .image__pokedex:after {
+.card__pokedex.electric .image__pokedex:after {
   background-color: rgba(238, 217, 103, 0.2);
 }
 
@@ -333,7 +333,7 @@
   display: inline-block;
   padding: 0 25px;
   line-height: 2.4rem;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 600;
   font-size: 1.3rem;
   text-align: center;
@@ -356,7 +356,7 @@
   color: rgba(44, 106, 193, 1);
 }
 
-.tag-type.eletric {
+.tag-type.electric {
   background: rgba(238, 217, 103, 0.1);
   color: rgba(238, 217, 103, 1);
 }
@@ -431,7 +431,7 @@
 }
 
 .load__more {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
